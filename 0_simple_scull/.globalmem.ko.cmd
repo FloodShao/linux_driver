@@ -1,0 +1,1 @@
+cmd_/home/shaoguoliang/Github/linux_driver/0_simple_scull/globalmem.ko := ld -r -m elf_x86_64 -z max-page-size=0x200000 -T ./scripts/module-common.lds --build-id  -o /home/shaoguoliang/Github/linux_driver/0_simple_scull/globalmem.ko /home/shaoguoliang/Github/linux_driver/0_simple_scull/globalmem.o /home/shaoguoliang/Github/linux_driver/0_simple_scull/globalmem.mod.o ;  true
