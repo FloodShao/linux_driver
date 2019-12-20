@@ -1,0 +1,15 @@
+#!/bin/bash
+
+insmod ./global_fifo.ko
+
+# create a vitual device /dev/globalfifo
+mknod /dev/globalfifo c 230 0
+
+# create 2 process 
+# run the following in one terminal, & will hold the process 
+cat /dev/globalfifo &
+
+run the following in the other terminal
+echo "1" > /dev/globalfifo
+echo "2" > /dev/globalfifo
+echo "3" > /dev/globalfifo
