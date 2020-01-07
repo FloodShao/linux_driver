@@ -3,6 +3,7 @@ CUR_DIR = $(shell pwd)
 K_DIR = /lib/modules/$(KVERS)/build
 
 obj-m += global_fifo.o
+obj-m += global_fifo_poll.o
 
 build: kernel_modules
 
